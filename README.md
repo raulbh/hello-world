@@ -115,11 +115,11 @@ docker build -t runa-app .
 ```
 
 * Database creation
-  N/A
+  * N/A
 * Database initialization
-  N/A
+  * N/A
 * How to run the test suite
-  After the docker image was created I tested locally as follow:
+   After the docker image was created I tested locally as follow:
 ```
 $ docker run -p 3000:3000 runa-app
 ```
@@ -128,9 +128,9 @@ and curl to localhost:
 curl http://localhost:3000
 ```
 * Services (job queues, cache servers, search engines, etc.)
-  N/A
+  * N/A
 * Deployment instructions
-  Once I tested the container I taged and pushed my image to [my docker repository](https://hub.docker.com/r/raulbh/runa-app "my docker repository")
+    Once I tested the container I taged and pushed my image to [my docker repository](https://hub.docker.com/r/raulbh/runa-app "my docker repository")
 ```
 $ docker tag runa-app raulbh/runa-app:v1
 $ docker push raulbh/runa-app:v1
