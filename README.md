@@ -6,9 +6,9 @@ application up and running.
 Things you may want to cover:
 
 * Ruby version
-  I used ruby *version 2.6.5* as it is indicated in *.ruby-version* file
+  * I used ruby *version 2.6.5* as it is indicated in *.ruby-version* file
 * System dependencies
-  Here are the packages that were needed for this deployment
+  * Here are the packages that were needed for this deployment
 ```
   binutils-gold 
   build-base 
@@ -38,7 +38,7 @@ Things you may want to cover:
 ```
 
 * Configuration
-  I created the Dockerfile as follows, I'm trying to explain each line of the file, but I ommited this in the actual Docker file:
+  * I created the Dockerfile as follows, I'm trying to explain each line of the file, but I ommited this in the actual Docker file:
 ```
 # I decided to choose alpine version of ruby due to I tried previously with a ruby ubuntu based and was much heavy than this.
 FROM ruby:2.6.5-alpine
@@ -119,7 +119,7 @@ docker build -t runa-app .
 * Database initialization
   * N/A
 * How to run the test suite
-   After the docker image was created I tested locally as follow:
+  * After the docker image was created I tested locally as follow:
 ```
 $ docker run -p 3000:3000 runa-app
 ```
@@ -130,7 +130,7 @@ curl http://localhost:3000
 * Services (job queues, cache servers, search engines, etc.)
   * N/A
 * Deployment instructions
-    Once I tested the container I taged and pushed my image to [my docker repository](https://hub.docker.com/r/raulbh/runa-app "my docker repository")
+  * Once I tested the container I taged and pushed my image to [my docker repository](https://hub.docker.com/r/raulbh/runa-app "my docker repository")
 ```
 $ docker tag runa-app raulbh/runa-app:v1
 $ docker push raulbh/runa-app:v1
