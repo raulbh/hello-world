@@ -9,6 +9,7 @@ Things you may want to cover:
     I used ruby *version 2.6.5* as it is indicated in *.ruby-version* file
 * System dependencies
     Here are the packages that were needed for this deployment
+      ```
       binutils-gold 
       build-base 
       curl 
@@ -34,7 +35,7 @@ Things you may want to cover:
       tzdata 
       yarn 
       sqlite-dev
-
+```
 
 * Configuration
 
@@ -92,7 +93,7 @@ EXPOSE 3000
 # Start the application with an entry point script
 ENTRYPOINT ["./entrypoints/docker-entrypoint.sh"]
 ```
-As you can see I adden an ENTRYPOINT script located in *./entrypoints*
+As you can see I added an ENTRYPOINT script located in *./entrypoints*
 ```
 #!/bin/sh
 
@@ -115,11 +116,11 @@ docker build -t runa-app .
 ```
 
 * Database creation
-N/A
+  N/A
 * Database initialization
-N/A
+  N/A
 * How to run the test suite
-After the docker image was created I tested locally as follow:
+  After the docker image was created I tested locally as follow:
 ```
 $ docker run -p 3000:3000 runa-app
 ```
@@ -128,9 +129,9 @@ and curl to localhost:
 curl http://localhost:3000
 ```
 * Services (job queues, cache servers, search engines, etc.)
-N/A
+  N/A
 * Deployment instructions
-Once I tested the container I taged and pushed my image to [my docker repository](https://hub.docker.com/r/raulbh/runa-app "my docker repository")
+  Once I tested the container I taged and pushed my image to [my docker repository](https://hub.docker.com/r/raulbh/runa-app "my docker repository")
 ```
 $ docker tag runa-app raulbh/runa-app:v1
 $ docker push raulbh/runa-app:v1
