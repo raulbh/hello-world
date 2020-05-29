@@ -6,40 +6,39 @@ application up and running.
 Things you may want to cover:
 
 * Ruby version
-    I used ruby *version 2.6.5* as it is indicated in *.ruby-version* file
+  I used ruby *version 2.6.5* as it is indicated in *.ruby-version* file
 * System dependencies
-    Here are the packages that were needed for this deployment
-      ```
-      binutils-gold 
-      build-base 
-      curl 
-      file 
-      g++ 
-      gcc 
-      git 
-      less 
-      libstdc++
-      libffi-dev 
-      libc-dev 
-      linux-headers
-      libxml2-dev
-      libxslt-dev 
-      libgcrypt-dev 
-      make 
-      netcat-openbsd 
-      nodejs 
-      openssl 
-      pkgconfig 
-      postgresql-dev 
-      python
-      tzdata 
-      yarn 
-      sqlite-dev
+  Here are the packages that were needed for this deployment
+```
+  binutils-gold 
+  build-base 
+  curl 
+  file 
+  g++ 
+  gcc 
+  git 
+  less 
+  libstdc++
+  libffi-dev 
+  libc-dev 
+  linux-headers
+  libxml2-dev
+  libxslt-dev 
+  libgcrypt-dev 
+  make 
+  netcat-openbsd 
+  nodejs 
+  openssl 
+  pkgconfig 
+  postgresql-dev 
+  python
+  tzdata 
+  yarn 
+  sqlite-dev
 ```
 
 * Configuration
-
-I created the Dockerfile as follows, I'm trying to explain each line of the file, but I ommited this in the actual Docker file:
+  I created the Dockerfile as follows, I'm trying to explain each line of the file, but I ommited this in the actual Docker file:
 ```
 # I decided to choose alpine version of ruby due to I tried previously with a ruby ubuntu based and was much heavy than this.
 FROM ruby:2.6.5-alpine
